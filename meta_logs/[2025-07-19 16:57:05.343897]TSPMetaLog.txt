@@ -1,0 +1,11 @@
+2025-07-19 16:57:05,543 - INFO - ==================================================
+2025-07-19 16:57:05,543 - INFO - Starting Meta-Training
+2025-07-19 16:57:05,543 - INFO - ==================================================
+2025-07-19 16:57:14,889 - INFO - Meta-Episode 0 | Meta-Loss: 0.4761
+2025-07-19 16:58:40,598 - INFO - Meta-Episode 10 | Meta-Loss: 0.4678
+2025-07-19 17:00:04,987 - INFO - Meta-Episode 20 | Meta-Loss: 0.4615
+2025-07-19 17:01:30,097 - INFO - Meta-Episode 30 | Meta-Loss: 0.4717
+2025-07-19 17:02:54,733 - INFO - Meta-Episode 40 | Meta-Loss: 0.4649
+2025-07-19 17:04:20,058 - INFO - Meta-Episode 50 | Meta-Loss: 0.4696
+2025-07-19 17:05:46,400 - INFO - Meta-Episode 60 | Meta-Loss: 0.4608
+2025-07-19 17:07:12,704 - INFO - Meta-Episode 70 | Meta-Loss: 0.4817

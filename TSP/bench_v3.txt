@@ -1,0 +1,126 @@
+python tsp_benched_v3.py
+2025-07-18 18:20:23,060 - INFO - === Training Agent ===
+2025-07-18 18:20:23,631 - INFO - Starting Agent Training
+Episode 0 | Distance: 435.45 | Best: 435.45 | Running Avg: -21.77
+Episode 1000 | Distance: 561.73 | Best: 435.45 | Running Avg: -561.73
+Episode 2000 | Distance: 561.73 | Best: 435.45 | Running Avg: -561.73
+Episode 3000 | Distance: 464.50 | Best: 435.45 | Running Avg: -540.68
+Episode 4000 | Distance: 464.50 | Best: 435.45 | Running Avg: -464.50
+2025-07-18 18:21:42,437 - INFO - Agent Training completed
+2025-07-18 18:21:42,437 - INFO - 
+=== Testing on Original Problem ===
+2025-07-18 18:21:42,443 - INFO - 2-opt improvement time: 0.0012 seconds
+2025-07-18 18:22:12,494 - INFO - Solving for the exact global minimum...
+2025-07-18 18:22:14,440 - INFO - Exact solver time: 1.9452 seconds
+
+============================================================
+ORIGINAL PROBLEM RESULTS
+============================================================
+Method           | Time (s) | Distance | Gap vs Exact
+RL Only          |   0.0042 |   464.50 |   36.48%
+RL + 2-opt       |   0.0054 |   303.61 |  -10.80%
+OR-Tools         |  30.0031 |   340.34 |   -0.00%
+Exact            |   1.9452 |   340.35 |    0.00%
+
+============================================================
+RUNNING COMPREHENSIVE BENCHMARK
+============================================================
+2025-07-18 18:22:37,679 - INFO - 
+----- Comprehensive TSP Benchmark -----
+
+==================================================
+Testing with 10 nodes
+==================================================
+2025-07-18 18:22:37,736 - INFO - 2-opt improvement time: 0.0003 seconds
+2025-07-18 18:23:07,738 - INFO - Solving for the exact global minimum...
+2025-07-18 18:23:07,745 - INFO - Exact solver time: 0.0069 seconds
+Method           | Time (s) | Length  | vs OR-Tools | vs Exact
+RL Only          |   0.0556 |  373.66 |    28.71% |   28.71%
+RL + 2-opt       |   0.0559 |  241.42 |   -16.84% |  -16.84%
+OR-Tools         |  30.0014 |  290.30 |     0.00% |   -0.00%
+Exact            |   0.0069 |  290.31 |     0.00% |    0.00%
+Speedup (RL+2opt vs OR-Tools): 536.86x
+Speedup (RL+2opt vs Exact): 0.12x
+Quality improvement from 2-opt: -54.77%
+
+==================================================
+Testing with 15 nodes
+==================================================
+2025-07-18 18:23:07,747 - INFO - 2-opt improvement time: 0.0002 seconds
+2025-07-18 18:23:37,748 - INFO - Solving for the exact global minimum...
+2025-07-18 18:23:38,590 - INFO - Exact solver time: 0.8420 seconds
+Method           | Time (s) | Length  | vs OR-Tools | vs Exact
+RL Only          |   0.0017 |  508.10 |    58.53% |   58.52%
+RL + 2-opt       |   0.0019 |  310.97 |    -2.98% |   -2.98%
+OR-Tools         |  30.0006 |  320.52 |     0.00% |   -0.00%
+Exact            |   0.8420 |  320.53 |     0.00% |    0.00%
+Speedup (RL+2opt vs OR-Tools): 15863.81x
+Speedup (RL+2opt vs Exact): 445.24x
+Quality improvement from 2-opt: -63.39%
+
+==================================================
+Testing with 20 nodes
+==================================================
+2025-07-18 18:23:38,593 - INFO - 2-opt improvement time: 0.0008 seconds
+Method           | Time (s) | Length  | vs OR-Tools | vs Exact
+RL Only          |   0.0022 |  597.15 |    54.53% |     inf%
+RL + 2-opt       |   0.0029 |  367.94 |    -4.78% |     inf%
+OR-Tools         |  30.0007 |  386.42 |     0.00% |     inf%
+Speedup (RL+2opt vs OR-Tools): 10222.77x
+Quality improvement from 2-opt: -62.30%
+
+==================================================
+Testing with 50 nodes
+==================================================
+2025-07-18 18:24:08,640 - INFO - 2-opt improvement time: 0.0400 seconds
+Method           | Time (s) | Length  | vs OR-Tools | vs Exact
+RL Only          |   0.0053 | 1276.09 |   127.94% |     inf%
+RL + 2-opt       |   0.0453 |  576.27 |     2.93% |     inf%
+OR-Tools         |  30.0010 |  559.84 |     0.00% |     inf%
+Speedup (RL+2opt vs OR-Tools): 662.28x
+Quality improvement from 2-opt: -121.44%
+
+==================================================
+Testing with 100 nodes
+==================================================
+2025-07-18 18:24:39,927 - INFO - 2-opt improvement time: 1.2739 seconds
+Method           | Time (s) | Length  | vs OR-Tools | vs Exact
+RL Only          |   0.0114 | 2318.68 |   209.23% |     inf%
+RL + 2-opt       |   1.2853 |  803.61 |     7.17% |     inf%
+OR-Tools         |  30.0011 |  749.81 |     0.00% |     inf%
+Speedup (RL+2opt vs OR-Tools): 23.34x
+Quality improvement from 2-opt: -188.53%
+
+==================================================
+Testing with 200 nodes
+==================================================
+2025-07-18 18:25:45,123 - INFO - 2-opt improvement time: 35.1669 seconds
+Method           | Time (s) | Length  | vs OR-Tools | vs Exact
+RL Only          |   0.0259 | 4660.41 |   340.16% |     inf%
+RL + 2-opt       |  35.1928 | 1118.37 |     5.63% |     inf%
+OR-Tools         |  30.0004 | 1058.79 |     0.00% |     inf%
+Speedup (RL+2opt vs OR-Tools): 0.85x
+Quality improvement from 2-opt: -316.71%
+
+================================================================================
+COMPREHENSIVE BENCHMARK SUMMARY
+================================================================================
+VS OR-TOOLS:
+  Average optimality gap: -1.48%
+  Median optimality gap: -0.02%
+  Best optimality gap: -16.84%
+  Average speedup: 4551.65x
+  Median speedup: 599.57x
+  Cases where RL+2-opt beat OR-Tools: 3/6
+
+VS EXACT SOLVER:
+  Average optimality gap: -9.91%
+  Median optimality gap: -9.91%
+  Best optimality gap: -16.84%
+  Average speedup: 222.68x
+  Median speedup: 222.68x
+
+2-OPT IMPROVEMENT:
+  Average quality improvement: -134.53%
+  Median quality improvement: -92.42%
+  Best quality improvement: -54.77%

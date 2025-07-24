@@ -1,0 +1,24 @@
+Episode 0 | Distance: 429.68 | Best: 429.68 | Running Avg: -21.48
+Episode 1000 | Distance: 445.12 | Best: 415.86 | Running Avg: -445.12
+Episode 2000 | Distance: 711.22 | Best: 415.86 | Running Avg: -711.22
+Episode 3000 | Distance: 711.22 | Best: 415.86 | Running Avg: -711.22
+Episode 4000 | Distance: 711.22 | Best: 415.86 | Running Avg: -711.22
+Generating visualization...
+
+==================================================
+
+--- Testing with 10 nodes ---
+
+--- Testing with 15 nodes ---
+
+--- Testing with 20 nodes ---
+
+--- Testing with 50 nodes ---
+
+--- Testing with 100 nodes ---
+
+--- Testing with 300 nodes ---
+
+--- Testing with 500 nodes ---
+
+--- Testing with 1000 nodes ---

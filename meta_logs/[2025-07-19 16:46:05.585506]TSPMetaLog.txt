@@ -1,0 +1,53 @@
+2025-07-19 16:46:05,728 - INFO - ==================================================
+2025-07-19 16:46:05,728 - INFO - Loading existing model from TSPMetaModel.pth
+2025-07-19 16:46:05,728 - INFO - ==================================================
+2025-07-19 16:46:05,736 - INFO - ==================================================
+2025-07-19 16:46:05,736 - INFO - Testing with 10 nodes
+2025-07-19 16:46:05,736 - INFO - ==================================================
+2025-07-19 16:46:06,056 - INFO - 2-opt improvement time: 0.0003 seconds
+2025-07-19 16:46:21,101 - INFO - Solving for the exact global minimum...
+2025-07-19 16:46:21,108 - INFO - Exact solver time: 0.0071 seconds
+2025-07-19 16:46:21,109 - INFO -    Nodes        Method       Time  ...  MinNodexUsedForTraining  MaxNodesUsedForTraining  OrToolsTimeLimit
+0     10       Meta-RL   0.319290  ...                       15                       20                15
+1     10  Meta-RL-2opt   0.319557  ...                       15                       20                15
+2     10      Or-Tools  15.002536  ...                       15                       20                15
+3     10      Exact-DP   0.007059  ...                       15                       20                15
+
+[4 rows x 14 columns]
+2025-07-19 16:46:21,122 - INFO - Saved Data as Markdown to TSPMetaData.md
+2025-07-19 16:46:21,122 - INFO - ==================================================
+2025-07-19 16:46:21,122 - INFO - Testing with 100 nodes
+2025-07-19 16:46:21,122 - INFO - ==================================================
+2025-07-19 16:46:21,948 - INFO - 2-opt improvement time: 0.0119 seconds
+2025-07-19 16:46:36,951 - INFO -    Nodes        Method       Time  ...  MinNodexUsedForTraining  MaxNodesUsedForTraining  OrToolsTimeLimit
+0     10       Meta-RL   0.319290  ...                       15                       20                15
+1     10  Meta-RL-2opt   0.319557  ...                       15                       20                15
+2     10      Or-Tools  15.002536  ...                       15                       20                15
+3     10      Exact-DP   0.007059  ...                       15                       20                15
+4    100       Meta-RL   0.812027  ...                       15                       20                15
+5    100  Meta-RL-2opt   0.823937  ...                       15                       20                15
+6    100      Or-Tools  15.001155  ...                       15                       20                15
+7    100      Exact-DP        NaN  ...                       15                       20                15
+
+[8 rows x 14 columns]
+2025-07-19 16:46:36,962 - INFO - Saved Data as Markdown to TSPMetaData.md
+2025-07-19 16:46:36,962 - INFO - ==================================================
+2025-07-19 16:46:36,962 - INFO - Testing with 500 nodes
+2025-07-19 16:46:36,962 - INFO - ==================================================
+2025-07-19 16:46:41,979 - INFO - 2-opt improvement time: 0.1016 seconds
+2025-07-19 16:46:56,982 - INFO -     Nodes        Method       Time  ...  MinNodexUsedForTraining  MaxNodesUsedForTraining  OrToolsTimeLimit
+0      10       Meta-RL   0.319290  ...                       15                       20                15
+1      10  Meta-RL-2opt   0.319557  ...                       15                       20                15
+2      10      Or-Tools  15.002536  ...                       15                       20                15
+3      10      Exact-DP   0.007059  ...                       15                       20                15
+4     100       Meta-RL   0.812027  ...                       15                       20                15
+5     100  Meta-RL-2opt   0.823937  ...                       15                       20                15
+6     100      Or-Tools  15.001155  ...                       15                       20                15
+7     100      Exact-DP        NaN  ...                       15                       20                15
+8     500       Meta-RL   4.899079  ...                       15                       20                15
+9     500  Meta-RL-2opt   5.000688  ...                       15                       20                15
+10    500      Or-Tools  15.001154  ...                       15                       20                15
+11    500      Exact-DP        NaN  ...                       15                       20                15
+
+[12 rows x 14 columns]
+2025-07-19 16:46:56,994 - INFO - Saved Data as Markdown to TSPMetaData.md
